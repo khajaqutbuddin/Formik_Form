@@ -4,6 +4,7 @@ import * as yup from "yup"
 export function FormikFormDemo(){
 
     return(
+        // NOTE: this is Sample Code You Can add more elements based on requirement. 
         <div className="container-fliud">
             <Formik initialValues= {{userID:'',password:'', Number:0, Gender:false, email:''}} validationSchema={yup.object({
                 userID: yup.string().required('User ID Required !').min(4,'user ID too short').max(15, 'User ID too long'),
